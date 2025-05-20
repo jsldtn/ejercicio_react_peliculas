@@ -32,12 +32,12 @@ export default function Home() {
   if (loading) return <div className="text-center py-8">Cargando...</div>;
   if (error) return <div className="text-center text-red-500 py-8">{error}</div>;
 
-  return (
-    <div className="max-w-6xl mx-auto px-4 py-8">
-      <h1 className="text-3xl font-bold mb-6">Inicio</h1>
-      <section className="mb-8">
-        <h2 className="text-xl font-semibold mb-2">Populares</h2>
-        <MovieGrid movies={popular} />
+ return (
+  <div className="w-full px-4 py-8">
+    <h1 className="text-3xl font-bold mb-6">Inicio</h1>
+    <section className="mb-8">
+      <h2 className="text-xl font-semibold mb-2">Populares</h2>
+      <MovieGrid movies={popular} />
       </section>
       <section className="mb-8">
         <h2 className="text-xl font-semibold mb-2">Mejor Calificadas</h2>

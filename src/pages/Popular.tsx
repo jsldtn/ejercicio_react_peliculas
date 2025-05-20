@@ -24,7 +24,7 @@ export default function Popular() {
   }, [page]);
 
   return (
-    <div className="max-w-6xl mx-auto px-4 py-8">
+    <div className="w-full px-4 py-8">
       <h1 className="text-2xl font-bold mb-6">Películas Populares</h1>
       {loading ? (
         <div className="text-center py-8">Cargando...</div>

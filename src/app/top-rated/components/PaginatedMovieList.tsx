@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from "react";
+import { useState, useEffect } from "react";
 import { fetchMovies } from "../../../utils/apiHelpers";
 import PaginationControls from "../../../utils/PaginationControls";
 

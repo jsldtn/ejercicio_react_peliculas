@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from "react";
+import { useState, useEffect } from "react";
 import { markAsFavorite } from "../../../../services/accounts/markAsFavorite.ts";
 import { useGuestSession } from "../../../../providers/GuestSessionContext";
 

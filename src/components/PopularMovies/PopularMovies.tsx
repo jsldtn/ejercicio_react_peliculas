@@ -1,4 +1,3 @@
-import React from "react";
 import { getPopularMovies } from "../../services/getMovies/getPopularMovies";
 
 const PopularMovies = () => {

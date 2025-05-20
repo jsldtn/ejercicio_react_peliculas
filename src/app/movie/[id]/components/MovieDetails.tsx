@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from "react";
+import { useEffect, useState } from "react";
 import { fetchMovieDetails } from "../../../../services/movies/fetchMovieDetails";
 
 interface MovieDetailsProps {movieId: number;}

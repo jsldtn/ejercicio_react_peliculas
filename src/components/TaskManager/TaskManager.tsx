@@ -2,7 +2,6 @@ import { IconButton, List, ListItem, TextField, Typography } from "@mui/material
 import { useEffect } from "react";
 import DeleteIcon from '@mui/icons-material/Delete';
 import CheckIcon from '@mui/icons-material/Check';
-import React from "react";
 
 type Task = {
 

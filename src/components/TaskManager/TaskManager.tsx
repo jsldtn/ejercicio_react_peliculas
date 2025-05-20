@@ -1,5 +1,5 @@
-import { Icon, IconButton, List, ListItem, TextField, Typography } from "@mui/material";
-import { useEffect, useState } from "react";
+import { IconButton, List, ListItem, TextField, Typography } from "@mui/material";
+import { useEffect } from "react";
 import DeleteIcon from '@mui/icons-material/Delete';
 import CheckIcon from '@mui/icons-material/Check';
 import React from "react";
@@ -83,8 +83,8 @@ const TaskManager: React.FC = () => {
         variant = "standard" 
         fullWidth
         value = {task}
-        onChange = { (event) => setTask(event.target.value) }
-        onKeyDown = { (e) => e.key === "Enter" && addTask() }
+        onChange = { (event: React.ChangeEvent<HTMLInputElement>) => setTask(event.target.value) }
+        onKeyDown = { (e: React.KeyboardEvent<HTMLInputElement>) => e.key === "Enter" && addTask() }
         helperText = "Presiona Enter para agregar la tarea"
         sx = {{
             

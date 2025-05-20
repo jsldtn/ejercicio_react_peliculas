@@ -1,4 +1,3 @@
-import React from "react";
 import PaginatedMovieList from "./components/PaginatedMovieList";
 
 const TopRatedPage = () => {

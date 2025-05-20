@@ -32,14 +32,12 @@ export default function FavoriteButton({ movieId }: { movieId: number }) {
       sessionId = await getGuestSession();
       localStorage.setItem("guest_session_id", sessionId);
     }
-    if (!sessionId) {
-      setLoading(false);
-      return;
-    }
-    try {
-      await markAsFavorite(movieId, newFav, sessionId!);
-    } catch (e) {
-      // Optionally handle API error here
+    if (sessionId) {
+      try {
+        await markAsFavorite(movieId, newFav, sessionId);
+      } catch (e) {
+        // handle error
+      }
     }
     setLoading(false);
   };

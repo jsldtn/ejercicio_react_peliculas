@@ -1,6 +1,5 @@
 "use client";
 
-import React from "react";
 import PaginatedMovieList from "./components/PaginatedMovieList";
 
 const NowPlayingPage = () => {

@@ -32,7 +32,6 @@ export default function FavoriteButton({ movieId }: { movieId: number }) {
       sessionId = await getGuestSession();
       localStorage.setItem("guest_session_id", sessionId);
     }
-    // Ensure sessionId is a string (TypeScript fix)
     if (!sessionId) {
       setLoading(false);
       return;
@@ -47,13 +46,12 @@ export default function FavoriteButton({ movieId }: { movieId: number }) {
 
   return (
     <button
-        onClick={toggleFavorite}
-        disabled={loading}
-        aria-label={isFav ? "Quitar de favoritos" : "Agregar a favoritos"}
-        className="focus:outline-none focus:ring-2 focus:ring-blue-500"
+      onClick={toggleFavorite}
+      disabled={loading}
+      aria-label={isFav ? "Quitar de favoritos" : "Agregar a favoritos"}
+      className="focus:outline-none focus:ring-2 focus:ring-blue-500"
     >
-        {isFav ? "Quitar de favoritos" : "Agregar a favoritos"}
+      {isFav ? "Quitar de favoritos" : "Agregar a favoritos"}
     </button>
   );
- 
 }

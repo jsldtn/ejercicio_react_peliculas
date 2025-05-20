@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from "react";
+import { useEffect, useState } from "react";
 import { getFavoriteMovies } from "../../../services/getMovies/getFavoriteMovies";
 import { useGuestSession } from "../../../providers/GuestSessionContext";
 

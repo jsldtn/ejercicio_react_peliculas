@@ -1,6 +1,5 @@
 "use client";
 
-import React from "react";
 import FavoriteMoviesList from "./components/FavoriteMoviesList";
 
 const MyFavoritesPage = () => {
